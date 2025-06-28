@@ -104,7 +104,7 @@ body {
 .nav-toggle {
   display: none;
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--primary, #1f7db4);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -181,6 +181,9 @@ body {
   .nav-menu {
     width: 75vw;
     padding: 2rem 1.2rem;
+  }
+  .nav-toggle {
+    display: block;
   }
 }
 
