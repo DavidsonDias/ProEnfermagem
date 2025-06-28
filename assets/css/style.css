@@ -422,9 +422,40 @@ section h2 {
   background: #222;
   color: #eee;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 1rem;
   font-size: 0.9rem;
   margin-top: 3rem;
+}
+
+.footer .dev-info {
+  margin-top: 1.2rem;
+}
+
+.footer .dev-info p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.seven-link {
+  color: var(--primary, #0fc4ed);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seven-link:hover {
+  text-decoration: underline;
+}
+
+.seven-logo {
+  display: block;
+  margin: 0.5rem auto 0;
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.seven-logo:hover {
+  transform: scale(1.05);
 }
 
 /* ========= Responsivo ========= */
@@ -466,4 +497,5 @@ section h2 {
   .nav-toggle {
     display: block;
   }
+}
 }
