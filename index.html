@@ -1,46 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Meta Padrão -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- SEO -->
-  <meta name="description" content="Atendimento de enfermagem domiciliar especializado em Belo Horizonte. Cuidados profissionais, humanizados e dedicados para quem você ama." />
-  <meta name="author" content="ProEnfermagem" />
-  <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="enfermagem domiciliar, cuidados em casa, atendimento de saúde, enfermeira, Belo Horizonte, home care" />
+  <!-- Metadados Essenciais -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="pt-BR">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">  
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Open Graph (para redes sociais) -->
-  <meta property="og:title" content="ProEnfermagem – Atendimento Domiciliar Especializado" />
-  <meta property="og:description" content="Enfermagem domiciliar com qualidade, conforto e segurança em Belo Horizonte." />
-  <meta property="og:image" content="https://pro-enfermagem.vercel.app/assets/imagem-compartilhamento.jpg" />
-  <meta property="og:url" content="https://pro-enfermagem.vercel.app/" />
-  <meta property="og:type" content="website" />
+  <title>ProEnfermagem – Atendimento Domiciliar Especializado</title>
+  <meta name="description" content="Atendimento de enfermagem domiciliar especializado em Belo Horizonte. Cuidados profissionais, humanizados e dedicados para quem você ama.">
+  <meta name="keywords" content="enfermagem domiciliar, cuidados em casa, atendimento de saúde, enfermeira, Belo Horizonte, home care">
+  <meta name="author" content="SevenDevX – Criado para ProEnfermagem">
+  <meta name="robots" content="index, follow">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ProEnfermagem – Atendimento Domiciliar Especializado" />
-  <meta name="twitter:description" content="Cuidados de enfermagem com excelência no conforto da sua casa em Belo Horizonte." />
-  <meta name="twitter:image" content="https://pro-enfermagem.vercel.app/assets/imagem-compartilhamento.jpg" />
+  <!-- SEO: Open Graph -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProEnfermagem – Atendimento Domiciliar Especializado">
+  <meta property="og:description" content="Enfermagem domiciliar com qualidade, conforto e segurança em Belo Horizonte.">
+  <meta property="og:image" content="https://pro-enfermagem.vercel.app/assets/imagem-compartilhamento.jpg">
+  <meta property="og:url" content="https://pro-enfermagem.vercel.app/">
+  <meta property="og:site_name" content="ProEnfermagem">
 
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <!-- SEO: Schema.org -->
+  <meta itemprop="name" content="ProEnfermagem – Atendimento Domiciliar Especializado">
+  <meta itemprop="description" content="Cuidados de enfermagem com excelência no conforto da sua casa em Belo Horizonte.">
+  <meta itemprop="image" content="https://pro-enfermagem.vercel.app/assets/imagem-compartilhamento.jpg">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ProEnfermagem – Atendimento Domiciliar Especializado">
+  <meta name="twitter:description" content="Cuidados de enfermagem com excelência no conforto da sua casa em Belo Horizonte.">
+  <meta name="twitter:image" content="https://pro-enfermagem.vercel.app/assets/imagem-compartilhamento.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pro-enfermagem.vercel.app/">
+
+  <!-- Favicon e Ícones -->
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.ico">
 
   <!-- Tipografia -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- Estilo CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
 
   <!-- JavaScript -->
   <script src="/assets/js/script.js" defer></script>
+
+  <!-- JSON-LD: ProEnfermagem como organização principal -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ProEnfermagem",
+  "url": "https://pro-enfermagem.vercel.app",
+  "logo": "https://pro-enfermagem.vercel.app/assets/img/favicon.ico",
+  "email": "contato@proenfermagem.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Belo Horizonte",
+    "addressRegion": "MG",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Suporte ao Cliente",
+    "email": "contato@proenfermagem.com.br",
+    "url": "https://pro-enfermagem.vercel.app/#contato"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "SevenDevX",
+    "url": "https://sevendevx.com",
+    "logo": "https://sevendevx.com/assets/img/logo.svg",
+    "email": "sevendevxx@gmail.com",
+    "sameAs": [
+      "https://www.instagram.com/sevendevx",
+      "https://www.linkedin.com/company/sevendevx"
+    ]
+  }
+}
+</script>
+
+<!-- JSON-LD: WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ProEnfermagem",
+  "url": "https://pro-enfermagem.vercel.app",
+  "creator": {
+    "@type": "Organization",
+    "name": "SevenDevX",
+    "url": "https://sevendevx.com"
+  }
+}
+</script>
+
+<!-- JSON-LD: WebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "ProEnfermagem – Atendimento Domiciliar Especializado",
+  "url": "https://pro-enfermagem.vercel.app",
+  "description": "Atendimento de enfermagem domiciliar com qualidade e humanização em Belo Horizonte.",
+  "inLanguage": "pt-BR",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://pro-enfermagem.vercel.app"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "SevenDevX",
+    "url": "https://sevendevx.com"
+  }
+}
+</script>
 </head>
 
 <body>
