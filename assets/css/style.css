@@ -60,13 +60,19 @@ body {
 }
 
 /* ====== Logo ====== */
-.logo {
+.logo img {
   font-weight: 700;
   font-size: 1.6rem;
   color: var(--primary);
   text-decoration: none;
   letter-spacing: -1px;
   transition: color 0.2s;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo:hover,
