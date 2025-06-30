@@ -15,6 +15,7 @@
   --text-light: #555;
   --white: #fff;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --white-transparent: rgba(255, 255, 255, 0.9); /* ajuste a opacidade */
 }
 
 /* ========= Base ========= */
@@ -34,12 +35,18 @@ body {
 
 /* ========= Header / Navbar ========= */
 .header {
-  background: var(--white);
+  background: var(--white-transparent);
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 999;
   width: 100%;
+  transition: background 0.3s ease;
+}
+
+.header.scrolled {
+  background: var(--white-transparent); /* ou uma cor sólida */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ====== Navbar Container ====== */
@@ -103,17 +110,21 @@ body {
 /* ====== Toggle Button (Hamburger) ====== */
 .nav-toggle {
   display: none;
-  font-size: 2rem;
-  color: var(--primary, #1f7db4);
+  font-size: 1.8rem;
+  color: var(--primary);
   background: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 1.2rem;
-  padding: 0.5em 0.9em;
+  padding: 0.6em;
+  width: 48px;
+  height: 48px;
   border-radius: 8px;
   position: relative;
   z-index: 1100;
   transition: color 0.18s, background 0.18s, transform 0.15s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-toggle:hover,
@@ -136,7 +147,7 @@ body {
 }
 
 
-/* Animação para X */
+/* ====== Animation: Transform Hamburger into X ====== */
 .nav-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
 }
@@ -149,19 +160,18 @@ body {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
-
-
 /* ====== Mobile Styles ====== */
 @media (max-width: 900px) {
   .nav-menu {
     position: fixed;
     top: 70px;
     right: -100vw;
-    width: 70vw;
+    width: 35vw;
     height: calc(100% - 70px);
     background: var(--white);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     padding: 2rem 1.5rem;
     gap: 1.5rem;
     box-shadow: -3px 0 8px rgba(0, 0, 0, 0.1);
@@ -169,6 +179,21 @@ body {
     z-index: 1000;
     max-height: none;
   }
+  
+  .nav-menu a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+  .nav-menu a:hover {
+    background: rgba(15, 196, 237, 0.08);
+  }
+
+
   .nav-menu.active {
     right: 0;
   }
@@ -182,15 +207,18 @@ body {
     width: 75vw;
     padding: 2rem 1.2rem;
   }
-  .nav-toggle {
-    display: block;
+}
+@media (max-width: 600px) {
+  .nav-menu {
+    width: 65vw;
+    /* em telas bem pequenas */
+    gap: 1.5rem;
   }
 }
 
-
 /* ========= Hero ========= */
 .hero {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -452,7 +480,7 @@ section h2 {
 .seven-logo {
   display: block;
   margin: 0.5rem auto 0;
-  height: 40px;
+  height: 60px;
   width: auto;
   transition: transform 0.3s ease;
 }
